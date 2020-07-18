@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif; }
+
+.header {
+  width: 100%;
+  background-color: var(--color-one);
+  font-size: var(--font-small); }
+  .header__h1 {
+    padding: 3rem;
+    border-bottom: 0.3rem solid var(--color-three);
+    display: flex; }
+    .header__h1-h2 {
+      font-size: inherit;
+      margin-right: auto;
+      color: var(--color-three); }
+    .header__h1-user {
+      cursor: pointer;
+      font-size: inherit;
+      color: var(--color-three);
+      margin-right: 1rem; }
+    .header__h1-menu {
+      cursor: pointer;
+      font-size: inherit;
+      color: var(--color-three); }
+    .header__h1-span {
+      color: var(--color-four); }
+  .header__h2 {
+    padding: 3rem;
+    font-size: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__h2-select {
+      cursor: pointer;
+      flex: 0 0 50%;
+      padding: .5rem;
+      color: var(--color-three);
+      background-color: var(--color-one);
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      outline: none; }
+    .header__h2-item {
+      padding: .5rem 0; }
+    .header__h2-item:link, .header__h2-item:visited {
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--color-three);
+      border: none;
+      outline: none; }
+    .header__h2-item:focus {
+      background-color: var(--color-one); }
+
+.section-form {
+  background-color: var(--color-five); }
+
+.heading {
+  margin-top: 3rem; }
+  .heading__h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-middle);
+    margin-bottom: 1rem; }
+  .heading__h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: var(--font-small);
+    margin-bottom: 1rem; }
+
+.discover {
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--color-one);
+  border: 0.5rem solid var(--color-four);
+  color: var(--color-three); }
+  .discover__option {
+    padding: 3rem;
+    font-size: var(--font-middle);
+    border: var(--border-form); }
+  .discover__icon {
+    margin-right: 2rem; }
+  .discover__link:link, .discover__link:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-three); }
+
+.form {
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--color-one);
+  border: 0.5rem solid var(--color-four);
+  color: var(--color-three); }
+  .form__input {
+    display: flex; }
+    .form__input-btn {
+      flex: 0 0 20%;
+      cursor: pointer;
+      background-color: var(--color-one);
+      border: var(--border-form);
+      outline: none;
+      transition: all .2s;
+      color: inherit; }
+      .form__input-btn:hover {
+        background-color: var(--color-two);
+        transform: scale(1.05); }
+    .form__input-text {
+      width: 60%;
+      margin: 0;
+      padding: 1rem  .5rem;
+      font-size: var(--font-middle);
+      background-color: var(--color-two);
+      border: var(--border-form);
+      outline: none; }
+    .form__input:focus {
+      outline: none; }
+  .form__header {
+    display: flex;
+    justify-content: space-evenly;
+    border: var(--border-form); }
+    .form__header-box {
+      padding: 2rem;
+      font-size: var(--font-middle); }
+  .form__days {
+    display: flex;
+    justify-content: space-between; }
+  .form__day {
+    padding: 1.5rem;
+    border-right: var(--border-form);
+    width: 100%;
+    height: 100%;
+    flex: 0 0 25%; }
+    .form__day-h2 {
+      text-transform: uppercase; }
+  .form__details {
+    display: flex;
+    font-size: var(--font-middle); }
+    .form__details-box {
+      padding: 1rem;
+      border: var(--border-form);
+      flex: 0 0 25%; }
+    .form__details-h1 {
+      font-size: inherit;
+      font-weight: inherit;
+      font-size: var(--font-small); }
+  .form__submit {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--color-one);
+    border: var(--border-form);
+    outline: none;
+    color: inherit;
+    font-size: var(--font-middle);
+    cursor: pointer;
+    transition: all .2s; }
+    .form__submit:hover {
+      transform: scale(1.01);
+      background-color: var(--color-two); }
+    .form__submit:active {
+      transform: scale(0.95);
+      border: none;
+      background-color: var(--color-one); }
+
+:root {
+  --color-one: #392651;
+  --color-two:#7D19AF;
+  --color-three: #CCC3C5;
+  --color-four: #DA3159;
+  --color-five: #F8F5FA;
+  --font-small: 1.3rem;
+  --font-middle: 1.7rem;
+  --font-big: 2rem;
+  --border-form: .1px solid var(--color-four); }

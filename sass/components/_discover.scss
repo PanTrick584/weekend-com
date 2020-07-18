@@ -1,0 +1,26 @@
+.discover {
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--color-one);
+    border: .5rem solid var(--color-four);
+    color: var(--color-three);
+
+    &__option {
+        padding: 3rem;
+        font-size: var(--font-middle);
+        border: var(--border-form)
+    }
+    &__icon {
+        margin-right: 2rem;
+    }
+    &__link {
+
+        &:link,
+        &:visited{
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--color-three);
+        }
+    }
+}

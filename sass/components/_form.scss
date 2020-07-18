@@ -1,0 +1,129 @@
+.form {
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--color-one);
+    border: .5rem solid var(--color-four);
+    color: var(--color-three);
+
+    &__input {
+
+        display: flex;
+
+        &-btn {
+            flex: 0 0 20%;
+            cursor: pointer;
+            background-color: var(--color-one);
+            border: var(--border-form);
+            outline: none;
+            transition: all .2s;
+            color: inherit;
+    
+            &:hover {
+                background-color: var(--color-two);
+                transform: scale(1.05);
+            }
+        }
+
+        &-text {
+            width: 60%;
+            margin: 0;
+            padding: 1rem  .5rem;
+            font-size: var(--font-middle);
+            background-color: var(--color-two);
+            border: var(--border-form);
+            outline: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__header {
+
+        display: flex;
+        justify-content: space-evenly;
+        border: var(--border-form);
+
+        &-box {
+            padding: 2rem;
+            font-size: var(--font-middle);
+        }
+    }
+
+
+    &__days {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__day {
+
+        padding: 1.5rem;
+        border-right: var(--border-form);
+        width: 100%;
+        height: 100%;
+        flex: 0 0 25%;
+
+        &-box {
+         
+        }
+
+        &-p {
+
+        }
+        &-radio {
+
+        }
+
+        &-h2 {
+            text-transform: uppercase;
+        }
+    }
+
+    
+
+    &__details {
+
+        display: flex;
+        font-size: var(--font-middle);
+
+        &-box {
+            padding: 1rem;
+            border: var(--border-form);
+            flex: 0 0 25%;
+        }
+        &-h1 {
+            font-size: inherit;
+            font-weight: inherit;
+            font-size: var(--font-small);
+        }
+        &-checkbox {
+
+        }
+    }
+
+    &__submit {
+
+        width: 100%;
+        padding: 1rem 0;
+        background-color: var(--color-one);
+        border: var(--border-form);
+        outline: none;
+        color: inherit;
+        font-size: var(--font-middle);
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.01);
+            background-color: var(--color-two);
+        }
+        &:active{
+            transform: scale(.95);
+            border: none;
+            background-color: var(--color-one);
+        }
+    }
+}

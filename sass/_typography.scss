@@ -1,0 +1,16 @@
+.heading {
+
+    margin-top: 3rem;
+    &__h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: var(--font-middle);
+        margin-bottom: 1rem;
+    }
+    &__h2 {
+        text-align: center;
+        font-weight: 100;
+        font-size: var(--font-small);
+        margin-bottom: 1rem;
+    }
+}

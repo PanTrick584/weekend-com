@@ -1,0 +1,72 @@
+.header {
+
+    width: 100%;
+    background-color: var(--color-one);
+    font-size: var(--font-small);
+    
+
+    &__h1 {
+        padding: 3rem;
+        border-bottom: .3rem solid var(--color-three);
+        
+
+        display: flex;
+
+        &-h2 {
+            font-size: inherit;
+            margin-right: auto;
+            color: var(--color-three)
+        }
+
+        &-user {
+            cursor: pointer;
+            font-size: inherit;
+            color: var(--color-three);
+            margin-right: 1rem;
+        }
+        &-menu {
+            cursor: pointer;
+            font-size: inherit;
+            color: var(--color-three);
+        }
+        &-span {
+            color: var(--color-four);
+        }
+    }
+
+    &__h2 {
+        padding: 3rem;
+        font-size: inherit;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-select {
+            cursor: pointer;
+            flex: 0 0 50%;
+            padding: .5rem;
+            color: var(--color-three);
+            background-color: var(--color-one);
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            outline: none;
+        }
+
+        &-item {
+            padding: .5rem 0;
+        }
+        &-item:link, 
+        &-item:visited {
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--color-three);
+            border: none;
+            outline: none;
+        }
+        &-item:focus {
+            background-color: var(--color-one);
+        }
+    }
+}
